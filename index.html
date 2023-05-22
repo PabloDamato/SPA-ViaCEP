@@ -4,9 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPA-ViaCEP</title>
+    <title>ViaCEP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Open+Sans:wght@400;700&display=swap"rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <h1>ViaCEP</h1>
+            <div>Contato</div>
+        </nav>
+    </header>
+    <main>
+        <section id="form-section"> 
+            <div>
+                <form action="#" name="newAddress">
+                    <div>
+                        <label for="cep"></label>
+                        <input name="cep" id="cep" type="text" placeholder="CEP">
+                    </div>
+                    <div>
+                        <label for="street"></label>
+                        <input name="street" id="street" type="text" placeholder="Logradouro">
+                    </div>
+                    <div>
+                        <label for="number"></label>
+                        <input name="number" id="number" type="text" placeholder="Número">
+                    </div>
+                    <div>
+                        <label for="city"></label>
+                        <input name="city" id="city" type="text" placeholder="Cidade">
+                    </div>
+                    <div>
+                        <button type="submit">Salvar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="list-section">
+            <div>
+                <h3>São Paulo</h3>
+                <p>Rua dos Jardins, 720</p>
+                <span>11200-345</span>
+            </div>
+            <div>
+                <h3>São Paulo</h3>
+                <p>Rua dos Jardins, 720</p>
+                <span>11200-345</span>
+            </div>
+            <div>
+                <h3>São Paulo</h3>
+                <p>Rua dos Jardins, 720</p>
+                <span>11200-345</span>
+            </div>
+        </section>
+    </main>
+    <section id="modal-contact">
+        <div>
+            <div>
+                <p>pablodamato6@gmail.com</p>
+            </div>
+            <button>Fechar</button>
+        </div>
+    </section>
+    <footer>
+        <h2>Consulte CEPs de todo o Brasil</h2>
+    </footer>
 </body>
 </html>
