@@ -21,21 +21,23 @@
         <section id="form-section" class="form-container"> 
             <div class="form-card">
                 <form action="#" name="newAddress">
-                    <div>
+                    <div class="form-control">
                         <label for="cep"></label>
-                        <input name="cep" id="cep" type="text" placeholder="CEP">
+                        <input name="cep" id="cep" class="form-input" type="text" placeholder="CEP">
+                        <div class="error-message">Campo requerido</div>
                     </div>
-                    <div>
+                    <div class="form-control">
                         <label for="street"></label>
-                        <input name="street" id="street" type="text" placeholder="Logradouro">
+                        <input name="street" id="street" class="form-input" type="text" placeholder="Logradouro">
                     </div>
-                    <div>
+                    <div class="form-control">
                         <label for="number"></label>
-                        <input name="number" id="number" type="text" placeholder="Número">
+                        <input name="number" id="number" class="form-input" type="text" placeholder="Número">
+                        <div class="error-message">Campo requerido</div>
                     </div>
-                    <div>
+                    <div class="form-control">
                         <label for="city"></label>
-                        <input name="city" id="city" type="text" placeholder="Cidade">
+                        <input name="city" id="city" class="form-input" type="text" placeholder="Cidade">
                     </div>
                     <div class="btn-container">
                         <button type="submit">Salvar</button>
