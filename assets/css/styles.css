@@ -100,6 +100,26 @@ form {
     gap: 2rem;
 }
 
+form .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 4.5rem;
+}
+
+form .btn-container button {
+    width: 25rem;
+    height: 5rem;
+    background-color: var(--green);
+    border: 0;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    color: var(--white);
+    font-family: var(--font-auxiliar);
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
 #list-section {
     display: flex;
     justify-content: center;
