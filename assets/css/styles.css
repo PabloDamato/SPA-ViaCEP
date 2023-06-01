@@ -137,6 +137,16 @@ form .form-control .form-input {
     padding: 0 2.1rem;
 }
 
+form .form-control .form-input:-webkit-autofill {
+    color: var(--gray-200);
+    font-family: var(--font-auxiliar);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    caret-color: var(--green);
+}
+
 .form-input::placeholder {
     color: var(--gray-100);
     font-family: var(--font-auxiliar);
@@ -150,7 +160,8 @@ form .form-control .form-input {
     outline: 0.2rem solid var(--green);
 }
 
-.form-input:focus-within {
+.form-input:focus-within,
+.form-input:valid {
     color: var(--white);
 }
 
