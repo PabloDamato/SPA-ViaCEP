@@ -167,7 +167,7 @@ form .form-control .form-input {
     align-items: center;
     flex-direction: column;
     gap: 3.9rem;
-    margin: 1.6rem;
+    margin: 1.6rem 1.6rem 3.9rem 1.6rem;
 }
 
 .list-card-itens {
@@ -208,8 +208,60 @@ form .form-control .form-input {
     line-height: 1.6rem;
 }
 
-#modal-contact {
+.modal-container {
     display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    padding: 2.2rem;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.modal-box {
+    width: 100%;
+    background-color: var(--gray);
+    max-width: 37.4rem;
+    height: 16.8rem;
+    border-radius: 1rem;
+    border: 2px solid var(--gray-100);
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.7rem;
+} 
+
+.modal-content p {
+    color: var(--white);
+    font-family: var(--font-auxiliar);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+.modal-container button {
+    width: 100%;
+    max-width: 25rem;
+    height: 5rem;
+    background-color: var(--green);
+    border: 0;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    color: var(--white);
+    font-family: var(--font-auxiliar);
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.modal-container.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -220,7 +272,6 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
