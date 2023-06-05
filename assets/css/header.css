@@ -1,0 +1,39 @@
+header {
+    height: 8rem;
+    background-color: var(--green);
+    padding: 0 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-family: var(--font-principal);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    color: var(--white);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav div {
+    font-family: var(--font-principal);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: var(--white);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}

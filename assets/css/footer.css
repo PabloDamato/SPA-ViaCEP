@@ -1,0 +1,22 @@
+footer {
+    height: 8rem;
+    background-color: var(--green);
+    padding: 0 4.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h2 {
+    font-family: var(--font-principal);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: var(--white);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
