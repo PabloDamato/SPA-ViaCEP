@@ -15,7 +15,7 @@
     <header>
         <nav>
             <h1>ViaCEP</h1>
-            <div>Contato</div>
+            <div class="contact-link">Contato</div>
         </nav>
     </header>
     <main>
@@ -25,7 +25,7 @@
                     <div class="form-control">
                         <label for="cep"></label>
                         <input name="cep" id="cep" class="form-input" type="text" placeholder="CEP">
-                        <div class="error-message">Campo requerido</div>
+                        <div class="error-message" data-error="cep"></div>
                     </div>
                     <div class="form-control">
                         <label for="street"></label>
@@ -34,35 +34,20 @@
                     <div class="form-control">
                         <label for="number"></label>
                         <input name="number" id="number" class="form-input" type="text" placeholder="Número">
-                        <div class="error-message">Campo requerido</div>
+                        <div class="error-message" data-error="number"></div>
                     </div>
                     <div class="form-control">
                         <label for="city"></label>
                         <input name="city" id="city" class="form-input" type="text" placeholder="Cidade" disabled>
                     </div>
                     <div class="btn-container">
-                        <button type="submit">Salvar</button>
-                        <button type="reset">Limpar</button>
+                        <button name="btnSave" type="submit">Salvar</button>
+                        <button name="btnClear" type="reset">Limpar</button>
                     </div>
                 </form>
             </div>
         </section>
         <section id="list-section">
-            <div class="list-card-itens">
-                <h3>São Paulo</h3>
-                <p>Rua dos Jardins, 720</p>
-                <span>11200-345</span>
-            </div>
-            <div class="list-card-itens">
-                <h3>São Paulo</h3>
-                <p>Rua dos Jardins, 720</p>
-                <span>11200-345</span>
-            </div>
-            <div class="list-card-itens">
-                <h3>São Paulo</h3>
-                <p>Rua dos Jardins, 720</p>
-                <span>11200-345</span>
-            </div>
         </section>
     </main>
     <section id="modal-contact" class="modal-container">
@@ -70,7 +55,7 @@
             <div class="modal-content">
                 <p>pablodamato6@gmail.com</p>
             </div>
-            <button>Fechar</button>
+            <button id="btn-modal-contact-close">Fechar</button>
         </div>
     </section>
     <footer>

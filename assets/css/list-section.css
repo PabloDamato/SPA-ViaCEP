@@ -27,7 +27,7 @@
     line-height: 2.5rem;
 }
 
-.list-card-itens p {
+.list-card-itens .address-line {
     color: var(--white);
     font-family: var(--font-auxiliar);
     font-style: normal;
@@ -36,7 +36,7 @@
     line-height: 1.9rem;
 }
 
-.list-card-itens span {
+.list-card-itens .address-cep {
     color: var(--gray-300);
     font-family: var(--font-auxiliar);
     font-style: normal;
