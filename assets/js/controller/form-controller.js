@@ -40,6 +40,8 @@ export function init() {
     state.inputCep.addEventListener('change', handleInputCepChange);
     state.inputNumber.addEventListener('change', handleInputNumberChange);
     state.inputNumber.addEventListener('keyup', handleInputNumberkeyup);
+    state.inputNumber.addEventListener('keydown',handleInputNumberAllowOnlyNumbers);
+    state.inputNumber.addEventListener('keypress', handleInputNumberAllowOnlyNumbers);
     state.btnClear.addEventListener('click', handleBtnClearClick);
     state.btnSave.addEventListener('click', handleBtnSaveClick);
     state.inputCep.addEventListener('change', handleInputCepChange);
@@ -76,6 +78,24 @@ async function handleInputCepChange(event) {
         setFormError("cep", "Informe um CEP válido");
     }
 }
+
+/* A função handleInputNumberAllowOnlyNumbers é responsável por verificar se a tecla pressionada é um número (0-9) ou a tecla Backspace (8). 
+Se a tecla pressionada não for um número válido, a função chama event.preventDefault() para evitar que o caractere seja inserido no campo number. */
+function handleInputNumberAllowOnlyNumbers(event) {
+    const keyCode = event.which || event.keyCode; // Obtém o código da tecla pressionada
+    const inputValue = event.target.value; // Obtém o valor atual do campo de entrada
+    const newValue = inputValue + String.fromCharCode(keyCode); // Combina o valor atual com o novo caractere digitado
+    const isValidKey =
+      (keyCode >= 48 && keyCode <= 57) || // Verifica se é uma tecla numérica padrão (0-9)
+      (keyCode >= 96 && keyCode <= 105) || // Verifica se é uma tecla numérica do teclado numérico (0-9)
+      keyCode === 8; // Verifica se é a tecla Backspace
+  
+    const isMaxLengthReached = newValue.length >= 5; // Verifica se o limite máximo de 4 caracteres foi atingido
+  
+    if (!isValidKey || (isMaxLengthReached && keyCode !== 8)) {
+      event.preventDefault(); // Cancela o evento de digitação se a tecla não for válida ou se o limite máximo for atingido
+    }
+  }
 
 /* Essa função é chamada quando o valor do campo inputNumber é alterado. 
 Ela verifica se o campo está vazio e, se estiver, define uma mensagem de erro usando a função setFormError. 
