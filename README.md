@@ -10,6 +10,6 @@ Projeto realizado com o objetivo de reproduzir uma SPA(Single Page Application) 
 
 ## 🛠️ Projeto em construção...
 
-> Deploy: https://pablodamato.github.io/SPA-ViaCEP/
+> Deploy: [spa-viacep.netlify.app](https://spa-viacep.netlify.app/)
 
 
